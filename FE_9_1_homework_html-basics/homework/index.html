@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="main">
+            <div id="container">
+                <div id="content" role="main">
+                    <!-- TODO: Content goes here -->
+
+                    <!-- header -->
+                    <header>
+                        <a href="http://www.epam.com/">
+                            <img src="logo.png" alt="epam">
+                        </a>
+
+                        <h1 id="home">
+                            <strong>HTML Elements</strong>
+                        </h1>
+                    </header>
+
+                    <!-- navigation -->
+                    <hr>
+                    <nav>
+                        <a href="#home"><b>Home</b></a>
+                        <a href="#headers"><b>Headers</b></a>
+                        <a href="#table"><b>Table</b></a>
+                        <a href="#list"><b>List</b></a>
+                        <a href="#tFormats"><b>Text formats</b></a>
+                        <a href="#blockquotes"><b>Blockquotes</b></a>
+                    </nav>
+                    <hr>
+
+                    <!-- aside -->
+                    <aside>
+                        <p>Pay attention to h1 tag inside section element. Font-size for h1 is the same as font-size for h2, because we have to use only one h1 on <wbr> the page, and it is commonly used inside header</p>
+                    </aside>
+
+                    <!-- main -->
+                    <main>
+                        <section id="headers">
+                            <h2>Header 2</h2>
+                            <h3>Header 3</h3>
+                            <h4>Header 4</h4>
+                            <h5>Header 5</h5>
+                            <h6>Header 6</h6>
+                        </section>
+
+                        <section id="table">
+                            <h2>Table</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                        <th>Header</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Strong</strong></td>
+                                        <td>CO<sub>2</sub></td>
+                                        <td><a href="https://www.couchsurfing.com/people/taras-roz/friends#_=_">Some link</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i>Italic</i></td>
+                                        <td><abbr>Abbreviation</abbr></td>
+                                        <td><del>Delete</del></td>
+                                    </tr>
+                                    <tr>
+                                        <td><u>Underline</u></td>
+                                        <td>5<sup>3</sup> = 125</td>
+                                        <td>
+                                            <Ins>Inserted</Ins>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+
+                        <aside id="list">
+                            <section>
+                                <h2>Unordered List</h2>
+                                <ul>
+                                    <li>List item 1</li>
+                                    <li>List item 2
+                                        <ul>
+                                            <li>Some nested list item 1</li>
+                                        </ul>
+                                    </li>
+                                    <li>List item 3</li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h2>Ordered List</h2>
+                                <ol type="1">
+                                    <li>List item 1</li>
+                                    <li>List item 2
+                                        <ol>
+                                            <li>Some nested list item 1</li>
+                                        </ol>
+                                    </li>
+                                    <li>List item 3</li>
+                                </ol>
+                            </section>
+
+                            <section>
+                                <h2>Definition List</h2>
+                                <dl>
+                                    <dt>defines terms 1</dt>
+                                    <dd>Definition 1</dd>
+                                    <dt>defines terms 2</dt>
+                                    <dd>Definition 2</dd>
+                                </dl>
+                            </section>
+                        </aside>
+
+                        <section>
+                            <h2>Details</h2>
+                            <details open="open">
+                                <summary>Some details element (open)</summary>
+                                <p>Here are more details about the details.</p>
+                            </details>
+                            <details>
+                                <summary>Some details element (close)</summary>
+                                <p>Here are more details about the details.</p>
+                            </details>
+                        </section>
+                        <hr>
+
+                        <section id="tFormats">
+                            <h2>Text formats</h2>
+                            <h3>Article Text</h3>
+
+                            <article>
+                                <header>
+                                    <h2>Article title</h2>
+                                </header>
+                                <p>Article description</p>
+                            </article>
+
+                            <section>
+                                <h3>Preformatted Text</h3>
+                                <pre>
+<b>Text</b>
+  in a <b>pre</b> element
+    is displayed in a fixed-width
+font, and it preserves
+both           spaces and
+                            </pre>
+                            </section>
+
+                            <section>
+                                <h3>Code</h3>
+                                <pre>
+                                <code>
+.wrapper {
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+}
+                                </code>
+                            </pre>
+                            </section>
+                        </section>
+
+                        <section id="blockquotes">
+                            <h2>Blockquotes</h2>
+                            <p>Let's keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
+                            <blockquote cite="https://www.brainyquote.com/quotes/elon_musk_567302">
+                                "If you go back a few hundred years, what we take for granted today would seem like magic-being able to talk to people over long distances, to transmit images, flying, accessing vast amounts of data like an oracle. These are all things that would have
+                                been considered magic a few hundred years ago."<br>
+                                <a href="https://www.brainyquote.com/quotes/elon_musk_567302">Elon Musk</a>
+                            </blockquote>
+
+                        </section>
+                    </main>
+
+                    <!-- footer -->
+                    <footer>
+                        &copy; Copyright Epam Systems
+                    </footer>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
