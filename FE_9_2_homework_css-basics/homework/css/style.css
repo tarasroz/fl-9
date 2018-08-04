@@ -1,0 +1,173 @@
+/* 
+
+write your code here
+
+*/
+
+
+/* TASK - print version */
+
+@media print {
+    @page :first {
+        margin-top: 2cm;
+        margin-bottom: 2.5cm;
+        margin-left: 2cm;
+    }
+    .tm-sidebar,
+    #about,
+    .heading,
+    .blocks,
+    #ideas,
+    [alt="Contact image"],
+    #contact {
+        display: none
+    }
+    body {
+        background-color: #ffffff;
+        padding-top: 0cm;
+    }
+    .tm-main-content {
+        margin-left: 0cm;
+        padding-left: 0cm
+    }
+    .tm-banner {
+        height: 6.5cm;
+    }
+    .tm-content-box {
+        margin-bottom: 0.5cm
+    }
+    .margin-b-10 {
+        margin-bottom: 0cm
+    }
+    .pad {
+        padding: 0cm 0cm 0cm 0.8cm
+    }
+    .tm-team-description-container {
+        max-width: 16cm;
+        display: block
+    }
+    h2.tm-section-title {
+        color: #0000ff
+    }
+    .flex-2-col,
+    img[src="img/image.jpg"] {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+}
+
+
+/* TASK - screen version */
+
+
+/* @media only screen and (min-width: 1000px) */
+
+@media screen {
+    /* TASK 1 */
+    .thumbnail {
+        border-radius: 100%
+    }
+    .tm-box-bg-title:hover {
+        background: #31B0D5;
+        color: #ffffff;
+        font-weight: bold
+    }
+    /* TASK 3 */
+    /*:not(.text-xs-center)*/
+    p:first-letter {
+        color: #76cdd7;
+        font-size: 30px
+    }
+    /* TASK 4 */
+    .tm-sidebar,
+    .tm-content-box {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5)
+    }
+    /* TASK 5 */
+    .tm-content-box {
+        position: relative
+    }
+    .tm-content-box::before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 30px 135px 0 0;
+        border-color: #31B0D5 transparent transparent transparent;
+        z-index: 1
+    }
+    .blocks>.tm-content-box.flex-2-col {
+        display: none
+    }
+    /* TASK 6 */
+    .carousel-item.active .tm-section-title {
+        color: gainsboro;
+        letter-spacing: 5px
+    }
+    /* TASK 7 */
+    h2+p {
+        font-style: italic
+    }
+    /* TASK 8 */
+    p:not(.tm-banner-text) {
+        line-height: 160%;
+        text-indent: 1.9em
+    }
+    /* TASK 9 */
+    .heading.tm-content-box h2 {
+        text-align: center;
+        color: #76cdd7
+    }
+    .pad a {
+        color: #000000
+    }
+    ol li a:visited {
+        color: #c0c0c0
+    }
+    .heading a:hover {
+        color: #79ced8;
+        text-decoration-style: double
+    }
+    a.text:after {
+        content: "New";
+        color: #ff0000;
+        vertical-align: top;
+        font-size: 0.6rem
+    }
+    /* TASK 10 */
+    .box p:first-letter {
+        color: #000000
+    }
+    .box p {
+        text-indent: 0
+    }
+    .gallery-container .box:nth-child(2n-1) {
+        background-color: #f2f2f2
+    }
+    .tm-box-bg-title {
+        background-color: #ffffff;
+    }
+    /* TASK 11 */
+    .tm-nav-item:not(:last-child) {
+        border-bottom: 2px dotted #c0c0c0
+    }
+    /* TASK 12 */
+    .form-control,
+    .submit-btn {
+        color: #ff0000;
+    }
+    div.mandatory-field:after {
+        content: "*";
+        color: #ff0000;
+        font-weight: bold
+    }
+    .submit-btn:hover {
+        background: #31B0D5;
+        color: #ffffff;
+        /* border: 6px double #ffffff */
+    }
+}
