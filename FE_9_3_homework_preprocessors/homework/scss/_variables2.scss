@@ -1,0 +1,48 @@
+// DESIGN #2
+$mainBackgroundColor:#EFEFEF;
+$articleBackgroundColor:#ffffff;
+$navColor: #fc5830;
+$articleColor:#bdbdbd;
+$navBorderColor: #cfd8dc;
+$descriptionH3Color: #617d8a;
+$descriptionPColor: #757575;
+// main
+$imgWidth:880px;
+$imgMargin:20px;
+$articleWidth:$imgWidth+2*$imgMargin;
+$headerImgMargin-left:320px;
+$mainWidth:$headerImgMargin-left+2*$articleWidth+$headerImgMargin-left+3*$imgMargin;
+// navigation
+$navFont-family:"Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
+$navWidth: 1120px;
+$navHeight: 115px;
+$descriptionFont-size: 24px;
+$navBorder: 3px $navBorderColor;
+$navBorderStyle: solid none solid none;
+$navPadding-top: 35px;
+$aMargin: 0px 110px 0px 150px;
+// search
+$toolbarBorder: 2px solid $navColor;
+$toolbarInputWidth: 400px;
+$toolbarInputHeight: 80px;
+$toolbarInputPadding-left: 45px;
+// blog
+$listMargin-bottom: 135px;
+$listMargin-right: 280px;
+$articleMargin: 0px 0px 40px 50px;
+$articleDivMargin: 0px $imgMargin 0px $imgMargin;
+$articleDivWidth: $imgWidth - 80px;
+// blog description
+$descriptionPadding: 0px 0px 20px 0px;
+$descriptionBorderStyle: none none solid none;
+$descriptionH3Margin: 5px 5px 5px 20px;
+$descriptionPMargin: 10px 5px 75px 20px;
+// about
+$aboutMargin-left: 385px;
+$aboutPMargin-bottom: 45px;
+// contact
+$placeholderColor: #757575;
+$buttonColor: #ffffff;
