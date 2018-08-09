@@ -6,6 +6,8 @@ $articleColor:#bdbdbd;
 $navBorderColor: #cfd8dc;
 $descriptionH3Color: #617d8a;
 $descriptionPColor: #757575;
+$navFont-family:sans-serif,
+Arial;
 // main
 $imgWidth:880px;
 $imgMargin:20px;
@@ -13,13 +15,7 @@ $articleWidth:$imgWidth+2*$imgMargin;
 $headerImgMargin-left:320px;
 $mainWidth:$headerImgMargin-left+2*$articleWidth+$headerImgMargin-left+3*$imgMargin;
 // navigation
-$navFont-family:"Helvetica Neue",
-Helvetica,
-Arial,
-sans-serif;
-$navWidth: 1120px;
 $navHeight: 115px;
-$descriptionFont-size: 24px;
 $navBorder: 3px $navBorderColor;
 $navBorderStyle: solid none solid none;
 $navPadding-top: 35px;
@@ -33,10 +29,11 @@ $toolbarInputPadding-left: 45px;
 $listMargin-bottom: 135px;
 $listMargin-right: 280px;
 $articleMargin: 0px 0px 40px 50px;
-$articleDivMargin: 0px $imgMargin 0px $imgMargin;
+$articleDivMargin: 0px $imgMargin;
 $articleDivWidth: $imgWidth - 80px;
 // blog description
-$descriptionPadding: 0px 0px 20px 0px;
+$descriptionFont-size: 24px;
+$descriptionPadding: 0px 0px 20px;
 $descriptionBorderStyle: none none solid none;
 $descriptionH3Margin: 5px 5px 5px 20px;
 $descriptionPMargin: 10px 5px 75px 20px;
