@@ -18,7 +18,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: url("../img/apples.jpg") center center/cover, #343638;
+  background: url("../img/apples.jpg") center center/cover;
+  box-shadow: inset 0 0 100px #343638;
   color: #fff; }
   header .logo-nav {
     margin: 60px; }
@@ -32,7 +33,8 @@ header {
         padding-left: 30px;
         font-size: 12px;
         color: #fff;
-        letter-spacing: 2px; }
+        letter-spacing: 2px;
+        text-decoration: none; }
   header .banner-value {
     display: flex;
     flex-direction: column;
@@ -50,7 +52,8 @@ header {
       height: 65px;
       margin-bottom: 110px;
       border: 2px solid #fff;
-      background-color: rgba(52, 54, 56, 0.5); }
+      background-color: rgba(52, 54, 56, 0.5);
+      color: #fff; }
 
 aside {
   height: 55vh;
@@ -75,7 +78,8 @@ main {
   align-items: center;
   width: 100%;
   height: auto; }
-  main .item {
+  main h2:first-child {
+    font-weight: 100;
     margin: 135px 0px 95px; }
   main article {
     display: flex;
@@ -89,7 +93,9 @@ main {
       text-align: center;
       color: #fff; }
       main article .on-image img {
-        width: auto; }
+        width: auto;
+        background: url("../img/sample.jpg") center center/cover;
+        box-shadow: inset 0 0 50px #343638; }
       main article .on-image input {
         position: absolute;
         top: 25px;
@@ -97,10 +103,11 @@ main {
         width: 70px;
         height: 40px;
         border: 2px solid #fff;
-        background-color: rgba(52, 54, 56, 0.5); }
+        background-color: rgba(52, 54, 56, 0.5);
+        color: #fff; }
       main article .on-image .p-image {
         position: absolute;
-        bottom: 5px;
+        bottom: 25px;
         left: 15px; }
     main article .text {
       padding: 20px;
@@ -109,25 +116,33 @@ main {
     width: 90%;
     margin: 65px;
     background-color: #fff;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
-    align-items: center;
     flex-wrap: nowrap;
-    text-align: justify; }
-  main .textline {
-    padding: 30px; }
-  main #mail {
-    width: 700px;
-    height: 70px;
-    margin: 65px 0px;
-    background-color: #F3F3F3;
-    border: 1px solid; }
-  main form input:nth-child(2) {
-    border: 2px;
-    background-color: #343638;
-    color: #fff;
-    width: 130px;
-    height: 70px;
-    right: 30px; }
+    align-content: center;
+    align-items: center; }
+    main .e-mail .textline {
+      padding: 30px;
+      text-align: justify;
+      font-size: 18px; }
+    main .e-mail #mail {
+      width: 54vw;
+      height: 70px;
+      margin: 65px 0px;
+      background-color: #F3F3F3;
+      border: 1px solid;
+      padding: 30px; }
+      main .e-mail #mail::placeholder {
+        color: #000; }
+    main .e-mail input:nth-child(2) {
+      border: 1px;
+      background-color: #343638;
+      color: #fff;
+      width: 10vw;
+      height: 70px;
+      margin: 0px 30px 0px -5px; }
+
+footer {
+  display: grid; }
 
 /*# sourceMappingURL=style.css.map */
