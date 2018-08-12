@@ -1,3 +1,5 @@
+@font-face {
+  font-family: "Open Sans Regular"; }
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +12,7 @@
   align-items: center;
   min-width: 900px;
   height: auto;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: "Open Sans"; }
 
 header {
   width: 100%;
@@ -22,18 +24,18 @@ header {
   box-shadow: inset 0 0 100px #343638;
   color: #fff; }
   header .logo-nav {
-    margin: 60px; }
+    margin: 7vh; }
     header .logo-nav p {
       float: left;
       text-transform: uppercase;
-      font-size: 14px; }
+      font-size: 0.875rem;
+      letter-spacing: 0.3vw; }
     header .logo-nav nav {
       float: right; }
       header .logo-nav nav a {
-        padding-left: 30px;
-        font-size: 12px;
+        padding-left: 5vw;
+        font-size: 0.9rem;
         color: #fff;
-        letter-spacing: 2px;
         text-decoration: none; }
   header .banner-value {
     display: flex;
@@ -42,15 +44,15 @@ header {
     align-items: center; }
     header .banner-value div:first-child {
       text-transform: uppercase;
-      font-size: 45px; }
+      font-size: 2.8125rem; }
       header .banner-value div:first-child span {
-        font-size: 85px; }
+        font-size: 5.3125rem; }
     header .banner-value .original {
-      margin-bottom: 160px; }
+      margin-bottom: 35vh; }
     header .banner-value input {
-      width: 300px;
-      height: 65px;
-      margin-bottom: 110px;
+      width: 18vw;
+      height: 8vh;
+      margin-bottom: 15vh;
       border: 2px solid #fff;
       background-color: rgba(52, 54, 56, 0.5);
       color: #fff; }
@@ -63,16 +65,16 @@ aside {
   align-items: center; }
   aside div:first-child {
     width: 50%;
-    font-size: 28px;
-    padding: 0px 75px; }
+    font-size: 1.5rem;
+    padding: 0vh 7vw; }
   aside .aside-2 {
     width: 50%;
-    font-size: 16px;
-    padding-right: 75px; }
+    font-size: 0.9rem;
+    padding-right: 9vw; }
 
 main {
   background-color: #F3F3F3;
-  font-size: 18px;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,13 +82,13 @@ main {
   height: auto; }
   main h2:first-child {
     font-weight: 100;
-    margin: 135px 0px 95px; }
+    margin: 25vh 0vw 13vh; }
   main article {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-    margin: 10px 70px;
+    margin: 2vh 15vw;
     width: 90%; }
     main article .on-image {
       position: relative;
@@ -94,55 +96,103 @@ main {
       color: #fff; }
       main article .on-image img {
         width: auto;
-        background: url("../img/sample.jpg") center center/cover;
         box-shadow: inset 0 0 50px #343638; }
       main article .on-image input {
         position: absolute;
-        top: 25px;
-        right: 25px;
-        width: 70px;
-        height: 40px;
+        top: 4vh;
+        right: 2vw;
+        width: 4.5vw;
+        height: 7vh;
         border: 2px solid #fff;
         background-color: rgba(52, 54, 56, 0.5);
         color: #fff; }
       main article .on-image .p-image {
         position: absolute;
-        bottom: 25px;
-        left: 15px; }
+        bottom: 5vh;
+        left: 3vw;
+        font-size: 1rem; }
     main article .text {
-      padding: 20px;
+      padding: 1vh;
       text-align: center; }
   main .e-mail {
     width: 90%;
-    margin: 65px;
+    margin: 14vh;
     background-color: #fff;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
     align-items: center; }
     main .e-mail .textline {
-      padding: 30px;
+      padding: 6vh;
       text-align: justify;
-      font-size: 18px; }
-    main .e-mail #mail {
-      width: 54vw;
-      height: 70px;
-      margin: 65px 0px;
+      font-size: 1.3rem; }
+    main .e-mail form {
+      flex-wrap: nowrap; }
+      main .e-mail form #mail {
+        width: 54vw;
+        margin: 14vh 0;
+        background-color: #F3F3F3;
+        border: 1px solid;
+        padding: 3vh; }
+        main .e-mail form #mail::placeholder {
+          color: #000; }
+      main .e-mail form input:nth-child(2) {
+        border: 1px;
+        background-color: #343638;
+        color: #fff;
+        padding: 3.2vh 1.5vw;
+        margin: 0vh 2vw 0vh -1vw; }
+
+.footer-blocks {
+  padding: 0 70px;
+  background: #fff;
+  color: #a4a4a4;
+  display: grid;
+  grid-column-gap: 35px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 350px;
+  align-items: center; }
+  .footer-blocks address {
+    font-style: normal; }
+  .footer-blocks h4 {
+    padding-bottom: 30px;
+    color: #000; }
+  .footer-blocks p {
+    font-size: 14px; }
+  .footer-blocks form {
+    display: inline-flex;
+    flex-wrap: nowrap; }
+    .footer-blocks form #textmail {
+      width: 200px;
+      height: 40px;
       background-color: #F3F3F3;
       border: 1px solid;
-      padding: 30px; }
-      main .e-mail #mail::placeholder {
+      padding: 10px; }
+      .footer-blocks form #textmail::placeholder {
         color: #000; }
-    main .e-mail input:nth-child(2) {
+    .footer-blocks form input:nth-child(2) {
       border: 1px;
       background-color: #343638;
       color: #fff;
-      width: 10vw;
-      height: 70px;
-      margin: 0px 30px 0px -5px; }
+      width: 80px;
+      height: 40px; }
 
-footer {
-  display: grid; }
+.copy-nav {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  font-size: 14px; }
+  .copy-nav .copy-right {
+    float: left;
+    padding-left: 70px;
+    color: #a4a4a4; }
+  .copy-nav nav {
+    float: right;
+    padding-right: 70px; }
+    .copy-nav nav a {
+      padding-left: 25px;
+      color: #a4a4a4;
+      text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
