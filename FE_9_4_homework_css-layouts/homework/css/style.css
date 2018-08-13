@@ -44,7 +44,8 @@ header {
     align-items: center; }
     header .banner-value div:first-child {
       text-transform: uppercase;
-      font-size: 2.8125rem; }
+      font-size: 3rem;
+      letter-spacing: 0.5rem; }
       header .banner-value div:first-child span {
         font-size: 5.3125rem; }
     header .banner-value .original {
@@ -82,21 +83,27 @@ main {
   height: auto; }
   main h2:first-child {
     font-weight: 100;
-    margin: 25vh 0vw 13vh; }
+    margin: 24vh 0vw 12vh; }
   main article {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-    margin: 2vh 15vw;
+    margin: 1vh 15vw;
     width: 90%; }
     main article .on-image {
       position: relative;
       text-align: center;
-      color: #fff; }
+      color: #F0F0F0;
+      width: 55vw;
+      height: 48vh;
+      box-shadow: inset 10px 15px 70px 50px #000;
+      z-index: 0; }
       main article .on-image img {
-        width: auto;
-        box-shadow: inset 0 0 50px #343638; }
+        width: 55vw;
+        height: 48vh;
+        z-index: -1;
+        opacity: 0.9; }
       main article .on-image input {
         position: absolute;
         top: 4vh;
@@ -108,91 +115,94 @@ main {
         color: #fff; }
       main article .on-image .p-image {
         position: absolute;
-        bottom: 5vh;
-        left: 3vw;
+        bottom: 4vh;
+        left: 2vw;
         font-size: 1rem; }
     main article .text {
       padding: 1vh;
       text-align: center; }
   main .e-mail {
     width: 90%;
-    margin: 14vh;
+    margin: 6vh;
     background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center; }
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap; }
     main .e-mail .textline {
       padding: 6vh;
-      text-align: justify;
-      font-size: 1.3rem; }
+      font-size: 1.4rem; }
     main .e-mail form {
+      display: inline-flex;
       flex-wrap: nowrap; }
-      main .e-mail form #mail {
-        width: 54vw;
-        margin: 14vh 0;
-        background-color: #F3F3F3;
+      main .e-mail form #form-mail {
+        width: 53vw;
+        margin: 8vh 0;
+        background-color: #E8E8E8;
         border: 1px solid;
         padding: 3vh; }
-        main .e-mail form #mail::placeholder {
+        main .e-mail form #form-mail::placeholder {
           color: #000; }
-      main .e-mail form input:nth-child(2) {
+      main .e-mail form #form-button {
         border: 1px;
         background-color: #343638;
         color: #fff;
         padding: 3.2vh 1.5vw;
-        margin: 0vh 2vw 0vh -1vw; }
+        margin: 8vh 2vw 8vh -1vw; }
 
 .footer-blocks {
-  padding: 0 70px;
+  padding: 19vh 5vw;
   background: #fff;
   color: #a4a4a4;
   display: grid;
-  grid-column-gap: 35px;
+  grid-column-gap: 4vw;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 350px;
-  align-items: center; }
+  grid-template-rows: 18vh;
+  align-items: baseline; }
   .footer-blocks address {
     font-style: normal; }
   .footer-blocks h4 {
-    padding-bottom: 30px;
+    padding-bottom: 3vh;
     color: #000; }
   .footer-blocks p {
-    font-size: 14px; }
+    font-size: 0.9rem; }
   .footer-blocks form {
     display: inline-flex;
     flex-wrap: nowrap; }
     .footer-blocks form #textmail {
-      width: 200px;
-      height: 40px;
-      background-color: #F3F3F3;
+      width: 15vw;
+      height: 6.4vh;
+      background-color: #E8E8E8;
       border: 1px solid;
-      padding: 10px; }
+      padding: 1vw; }
       .footer-blocks form #textmail::placeholder {
         color: #000; }
     .footer-blocks form input:nth-child(2) {
       border: 1px;
       background-color: #343638;
       color: #fff;
-      width: 80px;
-      height: 40px; }
+      width: 6vw; }
 
 .copy-nav {
   width: 100%;
-  height: 50px;
-  margin-top: 10px;
-  font-size: 14px; }
+  height: 6vh;
+  margin-top: 2vh;
+  font-size: 0.9rem; }
   .copy-nav .copy-right {
     float: left;
-    padding-left: 70px;
+    padding-left: 5vw;
     color: #a4a4a4; }
   .copy-nav nav {
     float: right;
-    padding-right: 70px; }
+    padding-right: 5vw; }
     .copy-nav nav a {
-      padding-left: 25px;
+      padding-left: 2vw;
       color: #a4a4a4;
       text-decoration: none; }
+
+input[type="button"]:hover {
+  background-color: #9E9E9E; }
+
+a:hover {
+  background-color: #B7C8D9; }
 
 /*# sourceMappingURL=style.css.map */
