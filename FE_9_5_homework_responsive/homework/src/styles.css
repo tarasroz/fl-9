@@ -1,0 +1,224 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+
+:root {
+    --bg-color--dark: #0a1223;
+    --bg-color--light: #fff;
+    --link: #5d5d5d;
+    --link--active: #54597d;
+    --link--hover: #54597d;
+    --article-title: #ddd;
+    --article-title--dark: #000;
+    --thumbnail--description: #5d5d5d;
+    /* These styles are needed only for media query max-width: 575px */
+    /* The 'Up' button (circle button at right bottom corner) */
+    --btn-color: #fff;
+    --btn-bg-color: #5ebcff;
+    --navigation-border-bottom: #ddd;
+    --thumbnail-title: #484747;
+}
+
+
+/* Your styles go here */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    height: auto;
+    font-family: sans-serif;
+    background-color: var(--bg-color--dark);
+    /* justify-content: space-around; */
+}
+
+#container {
+    margin: 0 110px;
+    /* padding: 0; */
+    width: 100%;
+    display: grid;
+    grid-column-gap: 2.5vw;
+    grid-template-columns: repeat(4, 1fr);
+    /* align-items: center; */
+}
+
+.nav-link {
+    grid-area: nav-link;
+}
+
+.title {
+    grid-area: title;
+}
+
+.content-title-1 {
+    grid-area: content-title-1;
+}
+
+.content-title-2 {
+    grid-area: content-title-2;
+}
+
+.content-title-3 {
+    grid-area: content-title-3;
+}
+
+.content-title-4 {
+    grid-area: content-title-4;
+}
+
+.content-title-5 {
+    grid-area: content-title-5;
+}
+
+.content-title-6 {
+    grid-area: content-title-6;
+}
+
+.content-title-7 {
+    grid-area: content-title-7;
+}
+
+.content-title-8 {
+    grid-area: content-title-8;
+}
+
+.content-title-9 {
+    grid-area: content-title-9;
+}
+
+.content-title-10 {
+    grid-area: content-title-10;
+}
+
+.description-1 {
+    grid-area: description-1;
+}
+
+.description-2 {
+    grid-area: description-2;
+}
+
+.description-3 {
+    grid-area: description-3;
+}
+
+.description-4 {
+    grid-area: description-4;
+}
+
+.description-5 {
+    grid-area: description-5;
+}
+
+.description-6 {
+    grid-area: description-6;
+}
+
+.description-7 {
+    grid-area: description-7;
+}
+
+.description-8 {
+    grid-area: description-8;
+}
+
+.description-9 {
+    grid-area: description-9;
+}
+
+.description-10 {
+    grid-area: description-10;
+}
+
+.img-1 {
+    grid-area: img-1;
+}
+
+.img-2 {
+    grid-area: img-2;
+}
+
+.img-3 {
+    grid-area: img-3;
+}
+
+.img-4 {
+    grid-area: img-4;
+}
+
+.img-5 {
+    grid-area: img-5;
+}
+
+.img-6 {
+    grid-area: img-6;
+}
+
+.img-7 {
+    grid-area: img-7;
+}
+
+.img-8 {
+    grid-area: img-8;
+}
+
+.img-9 {
+    grid-area: img-9;
+}
+
+.img-10 {
+    grid-area: img-10;
+}
+
+#container {
+    grid-row-gap: 4.5vh;
+    grid-template-rows: repeat(22, auto);
+}
+
+#container {
+    grid-template-areas: ". . . nav-link" "title title title title" "content-title-1 content-title-1 img-1 img-1" "description-1 description-1 img-1 img-1" "img-2 img-2 content-title-2 content-title-2" "img-2 img-2 description-2 description-2" "content-title-3 content-title-3 img-3 img-3" "description-3 description-3 img-3 img-3" "img-4 img-4 content-title-4 content-title-4" "img-4 img-4 description-4 description-4" "content-title-5 content-title-5 img-5 img-5" "description-5 description-5 img-5 img-5" "img-6 img-6 content-title-6 content-title-6" "img-6 img-6 description-6 description-6" "content-title-7 content-title-7 img-7 img-7" "description-7 description-7 img-7 img-7" "img-8 img-8 content-title-8 content-title-8" "img-8 img-8 description-8 description-8" "content-title-9 content-title-9 img-9 img-9" "description-9 description-9 img-9 img-9" "img-10 img-10 content-title-10 content-title-10" "img-10 img-10 description-10 description-10";
+}
+
+.nav-link a {
+    /* float: right; */
+    text-decoration: none;
+    color: var(--link);
+    margin: 35px 20px 0px 0px;
+}
+
+.title,
+.content-title {
+    color: var(--article-title);
+}
+
+.title {
+    text-align: center;
+    justify-content: center;
+    font-size: 3.8em;
+    margin-top: 200px;
+    /* margin-left: 110px; */
+}
+
+.content-title {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+p {
+    color: var(--thumbnail--description);
+}
+
+img {
+    width: 30vw;
+    height: 32vh;
+}
+
+
+/* main {}
+
+#content {} */
