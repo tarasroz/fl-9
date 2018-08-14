@@ -3,7 +3,8 @@
  * Feel free to add new colors if you need it
  */
 
-:root {
+
+/* :root {
     --bg-color--dark: #0a1223;
     --bg-color--light: #fff;
     --link: #5d5d5d;
@@ -11,14 +12,20 @@
     --link--hover: #54597d;
     --article-title: #ddd;
     --article-title--dark: #000;
-    --thumbnail--description: #5d5d5d;
-    /* These styles are needed only for media query max-width: 575px */
-    /* The 'Up' button (circle button at right bottom corner) */
-    --btn-color: #fff;
+    --thumbnail--description: #5d5d5d; */
+
+
+/* These styles are needed only for media query max-width: 575px */
+
+
+/* The 'Up' button (circle button at right bottom corner) */
+
+
+/* --btn-color: #fff;
     --btn-bg-color: #5ebcff;
     --navigation-border-bottom: #ddd;
     --thumbnail-title: #484747;
-}
+} */
 
 
 /* Your styles go here */
@@ -33,7 +40,7 @@ body {
     max-width: 1200px;
     height: auto;
     font-family: sans-serif;
-    background-color: var(--bg-color--dark);
+    background-color: #0a1223;
     /* justify-content: space-around; */
 }
 
@@ -187,35 +194,42 @@ body {
 .nav-link a {
     /* float: right; */
     text-decoration: none;
-    color: var(--link);
-    margin: 35px 20px 0px 0px;
+    color: #5d5d5d;
+    /* margin: 35px 20px 0px 0px; */
+    font-size: 1em;
+    font-weight: 600;
+    /* padding: 5%; */
+    /* word-spacing: 10px; */
+    /* padding-right: 0%; */
 }
 
 .title,
 .content-title {
-    color: var(--article-title);
+    color: #ddd;
 }
 
 .title {
     text-align: center;
     justify-content: center;
-    font-size: 3.8em;
+    font-size: 4em;
     margin-top: 200px;
     /* margin-left: 110px; */
 }
 
 .content-title {
-    font-size: 1.8em;
-    font-weight: bold;
+    font-size: 2em;
+    font-weight: bolder;
 }
 
 p {
-    color: var(--thumbnail--description);
+    color: #5d5d5d;
+    font-weight: bold;
+    font-size: 0.9em;
 }
 
 img {
-    width: 30vw;
-    height: 32vh;
+    width: 34vw;
+    height: 36vh;
 }
 
 
