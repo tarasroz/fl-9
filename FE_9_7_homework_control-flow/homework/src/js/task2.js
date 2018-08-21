@@ -24,9 +24,6 @@ if (!start) {
 
     let numHelp = 1;
 
-    // let min = Math.ceil(num_1);
-    // let max = Math.floor(num_2);
-
     //on 1-st attempt prize is 10$ (maximum prize for current numbers range), 2-nd attempt – 5$, 3-rd attempt – 2$. 
     let attemptI = 10;
     let attemptII = 5;
@@ -54,7 +51,7 @@ if (!start) {
             let gessNum = parseInt(prompt(`Enter a number from ${num_1} to ${num_2}
 Attempts left: ${i + numHelp}
 Total prize: ${sumAttempt}$
-Possible prize on current attempt: ${attempt[i]}$`, ''));
+Possible prize on current attempt: ${attempt[i]}$`, '0'));
 
             //If user guessed number 
             if (randomNum === gessNum) {
