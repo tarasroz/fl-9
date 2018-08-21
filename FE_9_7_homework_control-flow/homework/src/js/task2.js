@@ -1,5 +1,3 @@
-// Your code goes here
-
 //Guessing game
 
 //Step 1:
@@ -19,8 +17,8 @@ if (!start) {
 } else {
 
     //choose a number in range [0; 5], 
-    let num_1 = 0;
-    let num_2 = 5;
+    let numOne = 0;
+    let numTwo = 5;
 
     let numHelp = 1;
 
@@ -44,11 +42,11 @@ if (!start) {
         for (let i = attempt.length - numHelp; i >= 0; i--) {
 
             //randomly (use Math.random()) 
-            let randomNum = Math.floor(Math.random() * (num_2 - num_1 + numHelp)) + num_1;
+            let randomNum = Math.floor(Math.random() * (numTwo - numOne + numHelp)) + numOne;
 
             //ask user to enter a number. (use prompt())
             //Each time you ask user to enter a number you should show him a range of numbers, how much attempts he has left, his total prize and possible prize on current attempt.
-            let gessNum = parseInt(prompt(`Enter a number from ${num_1} to ${num_2}
+            let gessNum = parseInt(prompt(`Enter a number from ${numOne} to ${numTwo}
 Attempts left: ${i + numHelp}
 Total prize: ${sumAttempt}$
 Possible prize on current attempt: ${attempt[i]}$`, '0'));
@@ -83,7 +81,7 @@ Possible prize on current attempt: ${attempt[i]}$`, '0'));
         if (goOn) {
 
             //make number range twice as big as the previous one,
-            num_2 *= 2;
+            numTwo *= 2;
 
             //and three times bigger maximum prize
             attemptI *= 3;
