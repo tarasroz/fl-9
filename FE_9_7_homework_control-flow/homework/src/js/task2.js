@@ -17,17 +17,17 @@ if (!start) {
 } else {
 
     //choose a number in range [0; 5], 
-    let numOne = 0;
-    let numTwo = 5;
+    let numOne = 0,
+        numTwo = 5;
 
-    let numHelp = 1;
+    const numHelp = 1;
 
     //on 1-st attempt prize is 10$ (maximum prize for current numbers range), 2-nd attempt – 5$, 3-rd attempt – 2$. 
-    let attemptI = 10;
-    let attemptII = 5;
-    let attemptIII = 2;
+    let attemptI = 10,
+        attemptII = 5,
+        attemptIII = 2;
 
-    //could use object !!
+    //could use object/array !!
     let attempt = [
         [attemptIII],
         [attemptII],
@@ -85,8 +85,8 @@ Possible prize on current attempt: ${attempt[i]}$`, '0'));
 
             //and three times bigger maximum prize
             attemptI *= 3;
-            attemptII *= 3;
-            attemptIII = attemptIII * 3 + Math.ceil(numHelp / 2);
+            attemptII = attemptI / 2;
+            attemptIII = Math.floor(attemptI / 4);
 
             attempt = [
                 [attemptIII],
