@@ -7,35 +7,24 @@ function findType(data) {
 findType();
 
 // 2. 
-let forEach = function(el) {
-    let execfun = '';
+function forEach(elArr, funExec) {
 
-    for (let i = 0; i < el.length; i++) {
+    for (let i = 0; i < elArr.length; i++) {
 
-        execfun += ' ' + Number(el[i]);
+        funExec(elArr[i]);
+
     }
-
-    el = execfun;
-    // console.log(el);
-
-    return el;
 }
-
-forEach([]);
 
 // 3. 
-let map = function(el) {
-    let mapArr = 0,
-        mapNum = 3;
+function map(elArr, funExec) {
+    let basedArr = [];
 
-    for (let i = 0; i < el.length; i++) {
+    forEach(elArr, function(el) {
 
-        mapArr = +forEach([el[i] + mapNum]);
+        basedArr.push(funExec(el));
 
-    }
-    el = [mapArr];
+    });
 
-    return el;
+    return basedArr;
 }
-
-map([])
