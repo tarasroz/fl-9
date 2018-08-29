@@ -2,22 +2,15 @@ let findType = data => {
     return typeof data
 }
 
-// console.log(findType('string'))
-// console.log(findType(null))
 
 
-
-let elArr = [ /*2, 5, 8*/ ];
+let elArr = [];
 
 let forEach = (elArr, elFun) => {
     for (let i = 0; i < elArr.length; i++) {
         elFun(elArr[i])
     }
 }
-
-// forEach(elArr, el => {
-//     console.log(el)
-// })
 
 
 
@@ -30,10 +23,6 @@ let map = (elArr, elFun, elStor) => {
 
     return elStor
 }
-
-// console.log(map(elArr, el => {
-//     return el + 3
-// }))
 
 
 
@@ -49,10 +38,6 @@ let filter = (elArr, elFun, elStor = []) => {
 
     return elStor
 }
-
-// console.log(filter(elArr, el => {
-//     return el > 3
-// }))
 
 
 
@@ -105,8 +90,6 @@ let getAdultAppleLovers = data => {
     })
 }
 
-// console.log(getAdultAppleLovers(data))
-
 
 
 const elObj = {
@@ -126,8 +109,6 @@ const keys = (elObj, elStor = []) => {
     return elStor
 }
 
-// console.log(keys(elObj))
-
 
 
 const values = elObj => {
@@ -140,13 +121,9 @@ const values = elObj => {
     return elStor
 }
 
-// console.log(values(elObj))
 
 
-
-let showFormattedDate = (date = new Date( /*2018, 7, 27*/ )) => {
+let showFormattedDate = (date = new Date()) => {
 
     return `It is ${date.getDate()} of ${date.toLocaleString('en-US', {month: 'short'})}, ${date.getFullYear()}`
 }
-
-// console.log(showFormattedDate())
