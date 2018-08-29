@@ -1,59 +1,62 @@
-// 1. 
-function findType(data) {
-
-    return typeof data;
+let findType = data => {
+    return typeof data
 }
 
-findType();
+// console.log(findType('string'))
+// console.log(findType(null))
 
-// 2. 
-function forEach(elArr, funExec) {
 
+
+let elArr = [ /*2, 5, 8*/ ];
+
+let forEach = (elArr, elFun) => {
     for (let i = 0; i < elArr.length; i++) {
-
-        funExec(elArr[i]);
-
+        elFun(elArr[i])
     }
 }
 
-forEach([], function(el) {
-    console.log(el)
-})
+// forEach(elArr, el => {
+//     console.log(el)
+// })
 
-// 3. 
-function map(elArr, funExec) {
-    let basedArr = [];
 
-    forEach(elArr, function(el) {
 
-        basedArr.push(funExec(el));
+let map = (elArr, elFun, elStor) => {
+    elStor = [];
 
+    forEach(elArr, el => {
+        elStor[elStor.length] = elFun(el)
     });
 
-    return basedArr;
+    return elStor
 }
 
-//console.log(map([2, 5, 8], function(el) { return el + 3 }));
+// console.log(map(elArr, el => {
+//     return el + 3
+// }))
 
-// 4.
-function filter(elArr, funExec) {
-    let basedArr = [];
 
-    forEach(elArr, function(el) {
 
-        if (funExec(el)) {
+let filter = (elArr, elFun, elStor = []) => {
 
-            basedArr.push(el);
+    forEach(elArr, el => {
+
+        if (elFun(el)) {
+
+            elStor.push(el)
         }
-    });
+    })
 
-    return basedArr;
+    return elStor
 }
 
-//console.log(filter([2, 5, 8], function(el) { return el > 3 }));
+// console.log(filter(elArr, el => {
+//     return el > 3
+// }))
 
-// 5.
-let data = [{
+
+
+const data = [{
         '_id': '5b5e3168c6bf40f2c1235cd6',
         'index': 0,
         'age': 39,
@@ -85,65 +88,65 @@ let data = [{
         'name': 'Weiss',
         'favoriteFruit': 'banana'
     }
-];
+]
 
-function getAdultAppleLovers(data) {
 
-    return map(filter(data, function(el) {
+let getAdultAppleLovers = data => {
 
-        return el.age > 18 && el.favoriteFruit === 'apple';
+    let filterDat = filter(data, el => {
 
-    }), function(el) {
+        return el.age > 18 && el.favoriteFruit === 'apple'
 
-        return el.name;
-    });
+    })
+
+    return map(filterDat, el => {
+
+        return el.name
+    })
 }
 
-//console.log(getAdultAppleLovers(data));
+// console.log(getAdultAppleLovers(data))
 
-// 6.
-let obj = { keyOne: 1, keyTwo: 2, keyThree: 3 };
 
-function keys(obj) {
-    let basedArr = [];
 
-    for (let key in obj) {
+const elObj = {
+    keyOne: 1,
+    keyTwo: 2,
+    keyThree: 3
+};
 
+
+const keys = (elObj, elStor = []) => {
+
+    for (let key in elObj) {
         if (key) {
-
-            basedArr.push(key);
+            elStor.push(key)
         }
     }
-
-    return basedArr;
+    return elStor
 }
 
-// console.log(keys(obj));
+// console.log(keys(elObj))
 
-// 7.
-function values(obj) {
-    let basedArr = [];
 
-    for (let prop in obj) {
 
-        if (prop) {
+const values = elObj => {
+    let elStor = [];
 
-            basedArr.push(obj[prop]);
-        }
+    for (let value of Object.values(elObj)) {
+        elStor.push(value)
     }
 
-    return basedArr;
+    return elStor
 }
 
-// console.log(values(obj));
+// console.log(values(elObj))
 
-// 8.
-function showFormattedDate(date) {
 
-    const MONTH = [
-        `Jan`, `Feb`, `Mar`, `Apr`, `May`, `Jun`, `Jul`, `Aug`, `Sep`, `Oct`, `Nov`, `Dec`
-    ];
 
-    return `It is ${date.getDate()} of ${MONTH[date.getMonth()]}, ${date.getFullYear()}`;
+let showFormattedDate = (date = new Date( /*2018, 7, 27*/ )) => {
 
+    return `It is ${date.getDate()} of ${date.toLocaleString('en-US', {month: 'short'})}, ${date.getFullYear()}`
 }
+
+// console.log(showFormattedDate())
