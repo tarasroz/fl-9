@@ -1,0 +1,71 @@
+body {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5vh auto;
+    border: 2px solid gray;
+    width: 80vw;
+    height: auto;
+}
+
+.up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    margin: 5vh auto;
+    border-bottom: 1px solid #000;
+    padding-bottom: 3vh;
+}
+
+.catPng {
+    width: 5vw;
+}
+
+.addItem {
+    display: flex;
+    width: 70vw;
+}
+
+.addNewItem {
+    width: 65vw;
+    margin: 0 3vw;
+}
+
+.addButton,
+.checkBox,
+.delButton {
+    border: none;
+    background-color: #fff;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 70vw;
+    height: 1em;
+    margin: 1vh auto;
+}
+
+li span {
+    width: 70vw;
+    align-self: center;
+}
+
+.down {
+    margin: 2vh auto;
+}
