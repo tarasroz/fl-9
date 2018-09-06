@@ -1,7 +1,7 @@
 body {
     position: relative;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 #root {
@@ -38,14 +38,12 @@ body {
     margin: 0 3vw;
 }
 
-.addButton,
-.checkBox,
-.delButton {
+#addIcon {
     border: none;
     background-color: #fff;
 }
 
-.listDiv {
+.listDo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,6 +62,7 @@ li {
 li span {
     width: 70vw;
     align-self: center;
+    margin: auto 1vh;
 }
 
 .down {
