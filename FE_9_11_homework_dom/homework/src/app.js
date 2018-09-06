@@ -3,7 +3,7 @@ const rootNode = document.getElementById('#root');
 let addNewItem = document.querySelector('.addNewItem'),
     addButton = document.querySelector('.addButton'),
     listDo = document.querySelector('.listDiv'),
-    maxNum = 10,
+    maxNum = 11,
     itemPlus = 1;
 
 
@@ -18,7 +18,7 @@ addNewItem.addEventListener('change', function() {
         let itemLabel = addNewItem.value;
         addNewItem.value = '';
         addButton.disabled = true;
-        itemPlus++;
+        ++itemPlus;
 
         if (itemPlus <= maxNum) {
             addButton.disabled = true;
