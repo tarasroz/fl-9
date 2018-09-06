@@ -28,7 +28,7 @@ body {
     width: 5vw;
 }
 
-.addItem {
+.addItems {
     display: flex;
     width: 70vw;
 }
@@ -45,7 +45,7 @@ body {
     background-color: #fff;
 }
 
-.list {
+.listDiv {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +57,7 @@ li {
     justify-content: space-between;
     list-style: none;
     width: 70vw;
-    height: 1em;
+    height: 1.5em;
     margin: 1vh auto;
 }
 
