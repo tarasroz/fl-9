@@ -1,0 +1,88 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+}
+
+h1 {
+    margin: 3vh 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h1:not(:first-child) {
+    display: none;
+}
+
+.add-new-task {
+    margin-bottom: 3vh;
+}
+
+button {
+    height: 7vh;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+    border-radius: 2vh;
+    font-size: 1rem;
+}
+
+#addBtn {
+    padding: 0 2.5vw;
+    margin-bottom: 5vh;
+}
+
+#cancel,
+#save {
+    padding: 0 2vw;
+    display: none;
+}
+
+.container {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inputTxt {
+    width: 25vw;
+    height: 7vh;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-radius: 2vh;
+    margin-bottom: 7vh;
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.task {
+    width: 100%;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+}
+
+li span {
+    align-self: center;
+    font-size: 1.5rem;
+    display: block;
+    width: 110vw;
+    text-align: center;
+}
+
+.deleteImg {
+    height: 6vh;
+}
